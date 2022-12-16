@@ -1,0 +1,90 @@
+ // Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
+ 
+  // 3, 5 -> 243 (3⁵)
+ 
+  
+  static void  Main(string[] args) 
+  
+  {
+		double 3
+		double 5
+		double result = Math.Pow(3, 5);
+		Console.WritLine(result);
+  }
+ 
+	 // 2, 4 -> 16
+	 
+  {  
+     double 2
+	 double 4
+	 double result2 = Math.Pow(2, 4);
+	 Console.WriteLine(result2); 
+	 
+  }
+  
+  // Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе. 
+  
+    // 452 -> 11
+	// 82 -> 10
+	// 9012 -> 12
+  
+   static int Foo(int value) 
+   {
+	   if (value < 10) 
+		   return value;
+	   
+	   int digit value % 10;
+	   int nextValue = value / 10;
+	   return digit + Foo(nextValue) 
+   }
+   
+   static void  Main(string[] args) 
+   
+   {	
+		int myValue1 = 452;
+		int result = Foo(myValue);
+   }
+   
+   {
+	   int myValue2 = 82;
+	   int result = Foo(myValue);
+   }
+	 
+   {
+	   int myValue3 = 9012;
+	   int result = Foo(myValue);
+   }
+   
+   
+   // Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+   
+   // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
+   // 6, 1, 33 -> [6, 1, 33] 
+   
+    static void  Main(string[] args) 
+	
+	{
+		Console.Write("Введите количество массива");
+		
+		int elementsCount = int.Parse(Console.Readline));
+		int[] myArray = new int[elementsCount]; 
+		
+		for (int i = 0, 1 < myArray.Length, i++) 	
+			
+			{
+				Console.WriteLine("Введите элемент массива под индексом [i]");
+				myArray[i] = int.Parse(Console.ReadLine));
+			}
+		
+		Console.WriteLine("Вывод массива:");
+		
+		
+		for (int i = 0, 1 < myArray.Length, i++) 	
+			
+			{	
+				Console.WriteLine(myArray[i]);
+			}
+			
+			Console.ReadLine();
+		
+	}	
